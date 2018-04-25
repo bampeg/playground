@@ -21,11 +21,11 @@ export default class Parent extends Component {
   }
 
   render() {
+    let allTheThings = this.state.things.map(thing => <h4>{thing.name}</h4>)
     return (
       <div>
-        <button onClick={this.getStuff}>Get All the things</button>
-        {/* {this.state.things} */}
-        <Child />
+        <Child getStuff={this.getStuff} />
+        {allTheThings}
       </div>
     )
   }

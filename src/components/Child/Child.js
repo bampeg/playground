@@ -1,17 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-export default class Child extends Component {
-  constructor() {
-    super()
-    this.state = {
-    }
-  }
-
-  render() {
-    return (
-      <div>
-        This is the child!
-      </div>
-    )
-  }
+export default function Child(props) {
+  return (
+    <div>
+      <h3>
+        This button brought to you by the Child Component!
+        </h3>
+      <button onClick={props.getStuff}>Get All the things</button>
+    </div>
+  )
 }
