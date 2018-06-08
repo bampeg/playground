@@ -3,3 +3,15 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+.Thing {
+  width: 100px;
+  height: 100px;
+  background: lightslategray;
+  transition: width 2s;
+  cursor: pointer;
+}
+
+.clickedThing {
+  width: 100%;
+}

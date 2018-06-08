@@ -1,0 +1,12 @@
+.show {
+  color: #808080;
+}
+
+.hide {
+  display: none;
+}
+
+.default {
+  width: 500px;
+  box-shadow: 5px 5px 3px gray;
+}

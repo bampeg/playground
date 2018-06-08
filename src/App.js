@@ -1,13 +1,26 @@
 import React, { Component } from 'react';
-import Parent from './components/Parent/Parent';
+import { Link } from 'react-router-dom'
+import Router from './Router'
 import './App.css';
 
 class App extends Component {
+  constructor() {
+    super()
+    this.state = {
 
+    }
+  }
   render() {
     return (
       <div className="App">
-        <Parent />
+        {/* <Link to="/child">Child</Link>
+        <br />
+        <Link to="/">Parent</Link>
+        <br />
+        <Link to="/anotherchild">Another Child</Link> */}
+
+        <Router />
+        
       </div>
     );
   }
